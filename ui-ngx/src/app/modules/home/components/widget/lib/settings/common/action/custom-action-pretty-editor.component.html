@@ -37,6 +37,7 @@
   <div class="tb-custom-action-editor" [class.tb-fullscreen-editor]="fullscreen">
     <div *ngIf="!fullscreen; else fullscreenEditor">
       <tb-custom-action-pretty-resources-tabs [hasCustomFunction]="true"
+                                              [fullscreen]="fullscreen"
                                               [helpId]="helpId"
                                               [action]="action" (actionUpdated)="onActionUpdated($event ? true : false)">
       </tb-custom-action-pretty-resources-tabs>
@@ -45,6 +46,7 @@
       <div class="tb-fullscreen-panel tb-layout-fill flex flex-row">
         <div #leftPanel class="tb-split tb-content left-panel">
           <tb-custom-action-pretty-resources-tabs [hasCustomFunction]="false"
+                                                  [fullscreen]="fullscreen"
                                                   [helpId]="helpId"
                                                   [action]="action" (actionUpdated)="onActionUpdated($event ? true : false)">
           </tb-custom-action-pretty-resources-tabs>

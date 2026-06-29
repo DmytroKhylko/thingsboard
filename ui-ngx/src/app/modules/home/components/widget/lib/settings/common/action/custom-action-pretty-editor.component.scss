@@ -95,6 +95,27 @@
 
   .tb-content {
     border: 1px solid #c0c0c0;
+    .tb-html {
+      .tb-html-content-panel {
+        border: none;
+      }
+    }
+    .tb-css {
+      .tb-css-content-panel {
+        border: none;
+      }
+    }
+    .tb-js-func {
+      padding-top: 8px;
+      .tb-js-func-toolbar {
+        padding: 0 5px;
+      }
+      .tb-js-func-panel {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+      }
+    }
   }
 
   .gutter {
@@ -131,6 +152,3 @@
     }
   }
 }
-
-
-
